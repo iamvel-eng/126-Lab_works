@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="js/magic-parallax.js"></script>
+		<link rel="stylesheet" href="css/index.css" />
+        <!-- <link rel="stylesheet" href="css/dark-mode.css"> -->
+		 
+		
+        
+	</head>
+	<body>
+
+
+		<div class="stage" id="stage">
+			<div class="scene">
+				<h1
+					data-parallax 	= "true"
+					data-start-x 	= "0.5"
+					data-end-x   	= "0.5"
+					data-start-y 	= "0.5"
+					data-end-y	  	= "0.9"
+					data-mid-x		= "0.5"
+					data-mid-y		= "0.5">Welcome!</h1>
+
+				<img src="svg/circle.svg"
+					class = "shape med"
+					data-parallax = "true"
+					data-start-x = "0.2"
+					data-end-x = "0.2"
+					data-start-y = "0.5"
+					data-end-y = "2"
+					data-mid-x = "0.5"
+					data-mid-y = "0.5"
+				/>
+
+				<img src="svg/triangle.svg"
+					class = "shape big"
+					data-parallax = "true"
+					data-start-x = "0.75"
+					data-end-x = "0.75"
+					data-start-y = "1"
+					data-end-y = "0"
+					data-mid-x = "0.5"
+					data-mid-y = "0.5"
+				/>
+
+				<img src="svg/square.svg"
+					class = "shape small"
+					data-parallax = "true"
+					data-start-x = "0.85"
+					data-end-x = "0.85"
+					data-start-y = "0"
+					data-end-y = "1.5"
+					data-mid-x = "0.5"
+					data-mid-y = "0.5"
+					data-limit = "true"
+				/>
+			</div>
+
+			<div class="scene">
+				<h1
+					data-parallax 	= "true"
+					data-start-x 	= "0.5"
+					data-end-x   	= "0.5"
+					data-start-y 	= "0.5"
+					data-end-y	  	= "0.9"
+					data-mid-x		= "0.5"
+					data-mid-y		= "0.5">This is my responsive portfolio</h1>
+
+				<img src="svg/circle.svg"
+					class = "shape big"
+					data-parallax = "true"
+					data-start-x = "0.25"
+					data-end-x = "0.25"
+					data-start-y = "0.25"
+					data-end-y = "0.25"
+					data-mid-x = "0.5"
+					data-mid-y = "0.5"
+				/>
+
+				<img src="svg/triangle.svg"
+					class = "shape big"
+					data-parallax = "small"
+					data-start-x = "0.75"
+					data-end-x = "0.75"
+					data-start-y = "1"
+					data-end-y = "0"
+					data-mid-x = "0.5"
+					data-mid-y = "0.5"
+				/>
+
+				<img src="svg/square.svg"
+					class = "shape med"
+					data-parallax = "true"
+					data-start-x = "0.5"
+					data-end-x = "0.5"
+					data-start-y = "0"
+					data-end-y = "1.5"
+					data-mid-x = "0.5"
+					data-mid-y = "0.5"
+					data-limit = "true"
+				/>
+			</div>
+
+			<div class="scene">
+				<h1
+					data-parallax 	= "true"
+					data-start-x 	= "0.5"
+					data-end-x   	= "0.5"
+					data-start-y 	= "0.5"
+					data-end-y	  	= "0.9"
+					data-mid-x		= "0.5"
+					data-mid-y		= "0.5">Think before you <a href="home.html" class="hover-link">click</a>!</h1>
+
+				<img src="svg/circle.svg"
+					class = "shape med"
+					data-parallax = "true"
+					data-start-x = "0.2"
+					data-end-x = "0.2"
+					data-start-y = "0.5"
+					data-end-y = "2"
+					data-mid-x = "0.5"
+					data-mid-y = "0.5"
+				/>
+
+				<img src="svg/triangle.svg"
+					class = "shape big"
+					data-parallax = "true"
+					data-start-x = "0.75"
+					data-end-x = "0.75"
+					data-start-y = "1"
+					data-end-y = "0"
+					data-mid-x = "0.5"
+					data-mid-y = "0.5"
+				/>
+
+				<img src="svg/square.svg"
+					class = "shape small"
+					data-parallax = "true"
+					data-start-x = "0.85"
+					data-end-x = "0.85"
+					data-start-y = "0"
+					data-end-y = "1.5"
+					data-mid-x = "0.5"
+					data-mid-y = "0.5"
+					data-limit = "true"
+				/>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+		document.addEventListener('readystatechange', function() {
+    		if (document.readyState === "complete") {
+    			// Initiate parallax
+    			var p = new Parallax();
+    			p.init();
+    		}
+  		});
+		</script>
+	</body>
+    
+</html>
