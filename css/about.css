@@ -394,6 +394,12 @@ html, body {
   background-size: cover;
 }
 
+body.dark-mode html,body{
+    background: url('https://www.teahub.io/photos/full/1-15983_abstract-grey-wallpaper-hd-grey-wallpaper-hd-for.png');
+    color: white;
+}
+
+
 main {
   min-height: 100vh;
   display: grid;

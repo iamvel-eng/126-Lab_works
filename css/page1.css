@@ -171,6 +171,8 @@ span{
 .home-img img{
     object-fit: cover;
     position: relative;
+    padding-top: 3rem;
+    height: 95vh;
     width: 32vw;
     border-radius: 50%;
     box-shadow: 0 0 25px solid #b74b4b;
@@ -254,16 +256,16 @@ body.dark-mode .typing-text {
 }
 @keyframes words{
     0%, 20%{
-        content: "Project Manager";
+        content: "Graduating Student!";
     }
     21%, 40%{
-        content: "Web Developer";
+        content: "Project Manager";
     }
     41%, 60%{
         content: "Software Engineer";
     }
     61%, 80%{
-        content: "Graduating Student";
+        content: "Web Developer";
     }
     81%, 100%{
         content: "Breadwinner";

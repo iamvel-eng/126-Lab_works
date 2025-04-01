@@ -250,23 +250,7 @@ body.dark-mode .typing-text {
         border-left: 3px solid #b74b4b;
     }
 }
-@keyframes words{
-    0%, 20%{
-        content: "Graduating Student";
-    }
-    21%, 40%{
-        content: "Project Manager";
-    }
-    41%, 60%{
-        content: "Software Engineer";
-    }
-    61%, 80%{
-        content: "Web Developer";
-    }
-    81%, 100%{
-        content: "Breadwinner";
-    }
-}
+
 @media (max-width: 1000px){
     .home{
         gap: 4rem;
