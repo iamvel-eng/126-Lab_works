@@ -1,0 +1,72 @@
+body {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .sender-column {
+    text-align: right;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+  }
+  
+  h2 {
+    font-size: 1.3em;
+  }
+  
+  p,ul,ol,dl,address {
+    font-size: 1.1em;
+  }
+  
+  p, li, dd, dt, address {
+    line-height: 1.5;
+  }
+  
+  .right {
+    text-align: right;
+}
+
+/* Underline */
+.underline {
+  text-decoration: underline;
+}
+
+/* Overline */
+.overline {
+  text-decoration: overline;
+}
+
+/* Line-through (Strikethrough) */
+.line-through {
+  text-decoration: line-through;
+}
+
+/* No Decoration */
+.no-decoration {
+  text-decoration: none;
+}
+
+/* Dashed Underline */
+.dashed-underline {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+
+/* Dotted Underline */
+.dotted-underline {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.dotted-underline-faint {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: rgba(0, 0, 0, 0.2); /* Adjust the color and opacity */
+}
+
+
+.italic {
+  font-style: italic;
+}
+
