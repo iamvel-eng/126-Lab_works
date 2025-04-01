@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/about.css">
+    <script defer src="js/dark-mode.js"></script>
+</head>
+<body class="contact-page">
+
+    <header>
+        <a href="#" class="logo">Welcome!</a>
+        <nav>
+            <ul>
+                
+                <li><a href="page1.html">Home</a></li>
+                <li><a href="about.html"class="active">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Dark Mode Toggle -->
+        <div class="toggle-container">
+            <input type="checkbox" id="darkModeToggle">
+            <label for="darkModeToggle" class="toggle-label">
+                <span class="toggle-ball"></span>
+                <span class="sun">☀️</span>
+                <span class="moon">🌙</span>
+            </label>
+        </div>
+    </header>
+
+    <aside class="helper">Scroll sideways</aside>
+    <main>
+    <figure class="rellax">
+        <a href="about1.html" ><img src="img/pretty1.jpg" alt="Me coding"></a>
+        <figcaption class="rellax" data-rellax-speed="1">About ME</figcaption>
+    </figure>
+    <figure class="rellax">
+        <a href="about2.html" ><img src="img/resume.jpg" alt="Bronte Beach, Australia"></a>
+        <figcaption class="rellax" data-rellax-speed="1">Resume</figcaption>
+    </figure>
+    <figure class="rellax">
+        <a href="about3.html" ><img src="img/pretty3.jpg" alt="The moon"></a>
+        <figcaption class="rellax" data-rellax-speed="1">Fashion/Face Card</figcaption>
+    </figure>
+    </main>
+    <script src="https://cdn.rawgit.com/dixonandmoe/rellax/master/rellax.min.js"></script>
+    <script>
+    var rellax = new Rellax('.rellax',{horizontal: true, vertical: false, speed: 1.5});
+    </script>
+
+</body>
+</html>
