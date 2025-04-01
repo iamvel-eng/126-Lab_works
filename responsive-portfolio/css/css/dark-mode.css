@@ -1,0 +1,31 @@
+
+  /* Apply Theme */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background 0.5s ease, color 0.5s ease;
+  }
+  
+  .header {
+    background: var(--header-bg);
+    transition: background 0.5s ease;
+  }
+  
+  .navmenu a {
+    color: var(--text-color);
+    transition: color 0.5s ease;
+  }
+  
+  /* Dark Mode Toggle */
+  .dark-mode-toggle {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--icon-color);
+    transition: color 0.5s ease;
+    margin-left: 15px;
+  }
+  
+  .dark-mode-toggle:hover {
+    color: #ff6f61;
+  }
+  

@@ -1,0 +1,71 @@
+body {
+	background: #F1F3F4;
+	padding: 0;
+	margin: 0;
+}
+
+.stage {
+	/*display: flex;
+	flex-direction: column;*/
+	overflow: hidden;
+	position: relative;
+	color: red;
+}
+
+.scene {
+	position: relative;
+}
+
+h1 {
+	font-family: HelveticaNeue-Light;
+	color: red;
+	font-weight: 200;
+	text-align: center;
+	font-size: 300%;
+}
+
+.shape {
+	position: absolute;
+	transform-origin: 50% 50%;
+	top: 0;
+	left: 0;
+	opacity: 0.8;
+	
+}
+
+.big {
+	width: 200px;
+	height: 200px;
+}
+.med {
+	width: 100px;
+	height: 100px;
+}
+.small {
+	width: 90px;
+	height: 90px;
+}
+
+.h1 a {
+    color: yellow;  /* Change link color */
+    text-decoration: underline; /* Add underline */
+    font-weight: bold;
+	
+}
+
+.h1 a:hover {
+    color: orange;  /* Change color on hover */
+    text-decoration: none;
+}
+
+.hover-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.hover-link:hover {
+    color: #e74c3c;
+    text-shadow: 2px 2px 5px rgba(231, 76, 60, 0.5);
+}
