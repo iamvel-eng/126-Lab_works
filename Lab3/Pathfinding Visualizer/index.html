@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinding Quest</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <h1>PATHFINDING QUEST</h1>
+            <div class="game-score">
+                <div class="score-item">
+                    <span class="score-label">VISITED</span>
+                    <span id="visited-count" class="score-value">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">PATH</span>
+                    <span id="path-length" class="score-value">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">TIME</span>
+                    <span id="time-elapsed" class="score-value">0</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="game-main">
+            <div class="game-board">
+                <div id="grid" class="grid"></div>
+            </div>
+
+            <div class="game-controls">
+                <div class="control-panel">
+                    <h2>TOOLS</h2>
+                    <div class="tool-buttons">
+                        <button id="start-btn" class="game-btn tool-btn active">
+                            <span class="icon">🚩</span> Start
+                        </button>
+                        <button id="end-btn" class="game-btn tool-btn">
+                            <span class="icon">🏁</span> End
+                        </button>
+                        <button id="wall-btn" class="game-btn tool-btn">
+                            <span class="icon">🧱</span> Wall
+                        </button>
+                        <button id="weight-btn" class="game-btn tool-btn">
+                            <span class="icon">🔶</span> Weight
+                        </button>
+                    </div>
+                </div>
+
+                <div class="control-panel">
+                    <h2>ALGORITHM</h2>
+                    <select id="algorithm-select" class="game-select">
+                        <option value="dijkstra">Dijkstra's Algorithm</option>
+                        <option value="astar">A* Search</option>
+                        <!-- <option value="greedy">Greedy Best-First</option> -->
+                    </select>
+                </div>
+
+                <div class="control-panel">
+                    <h2>SPEED</h2>
+                    <div class="speed-control">
+                        <input type="range" id="speed-range" min="1" max="10" value="5">
+                        <div class="speed-labels">
+                            <span>🐢</span>
+                            <span>🚶</span>
+                            <span>🏎️</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button id="find-path-btn" class="game-btn primary-btn">
+                        <span class="icon">🔍</span> FIND PATH
+                    </button>
+                    <button id="clear-path-btn" class="game-btn">
+                        <span class="icon">🧹</span> CLEAR PATH
+                    </button>
+                    <button id="clear-all-btn" class="game-btn">
+                        <span class="icon">💣</span> CLEAR ALL
+                    </button>
+                </div>
+
+                <div class="game-messages" id="game-message"></div>
+            </div>
+        </div>
+
+        <div class="game-footer">
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="color-box start-node"></div>
+                    <span>Start (🚩)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box end-node"></div>
+                    <span>End (🏁)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box wall-node"></div>
+                    <span>Wall (🧱)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box weight-node"></div>
+                    <span>Weight (🔶)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box visited-node"></div>
+                    <span>Visited</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box path-node"></div>
+                    <span>Path</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="control-panel">
+            <h2>GRID SIZE</h2>
+            <div class="grid-size-control">
+                <div class="size-input">
+                    <label for="rows-input">Rows:</label>
+                    <input type="number" id="rows-input" min="5" max="30" value="10">
+                </div>
+                <div class="size-input">
+                    <label for="cols-input">Cols:</label>
+                    <input type="number" id="cols-input" min="5" max="30" value="10">
+                </div>
+                <button id="resize-grid-btn" class="game-btn">
+                    <span class="icon">🔳</span> RESIZE
+                </button>
+            </div>
+        </div>
+
+        
+
+    </div>
+
+    <script src="./js/core/Pathfinder.js"></script>
+    <script src="./js/core/Node.js"></script>
+    <script src="./js/core/Grid.js"></script>
+    <script src="./js/ui/controls.js"></script>
+    <script src="./js/algorithms/astar.js"></script>
+    <script src="./js/algorithms/dijkstra.js"></script>
+
+</body>
+</html>
